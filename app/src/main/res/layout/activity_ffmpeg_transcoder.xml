@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tv_cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Command" />
+
+    <EditText
+        android:id="@+id/et_cmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_cmd"
+        android:layout_below="@+id/tv_cmd"
+        android:ems="50"
+        android:text="ffmpeg -i /storage/emulated/0/sintel.mp4 /storage/emulated/0/sintel.mkv" />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_cmd"
+        android:layout_below="@+id/et_cmd"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_start"
+        android:layout_marginTop="14dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>

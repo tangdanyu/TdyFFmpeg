@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glviewFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".javacv.activity.VideoPlayerActivity">
+
+
+    <com.example.tdyffmpeg.javacv.view.VideoPlayerGLSurfaceView
+        android:id="@+id/videoGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/menuLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/galleryBtn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:text="相册" />
+
+            <Button
+                android:id="@+id/takeShotBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="截取画面" />
+
+            <Button
+                android:id="@+id/switchShapeBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="切换边框" />
+
+            <Button
+                android:id="@+id/fitViewBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="适应屏幕" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</FrameLayout>

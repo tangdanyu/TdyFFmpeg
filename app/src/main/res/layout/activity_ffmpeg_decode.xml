@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Input Bitstream" />
+
+    <EditText
+        android:id="@+id/et_input_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_input"
+        android:layout_below="@+id/tv_input"
+        android:ems="100"
+        android:inputType="textUri"
+        android:text="sintel.mp4"
+        android:textColor="#ff8c00" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_input_url"
+        android:layout_below="@+id/et_input_url"
+        android:text="Output Raw YUV" />
+
+    <EditText
+        android:id="@+id/et_output_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_output"
+        android:layout_below="@+id/tv_output"
+        android:ems="100"
+        android:inputType="textUri"
+        android:text="sintel.yuv"
+        android:textColor="#ff8c00" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_output_url"
+        android:layout_below="@+id/et_output_url"
+        android:text="Start" />
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/et_output_url"
+        android:layout_below="@+id/btn_start"
+        android:text="TextView" />
+
+</RelativeLayout>

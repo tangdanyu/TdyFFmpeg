@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FFmpeg information" />
+
+    <Button
+        android:id="@+id/btn_urlprotocol"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_info"
+        android:layout_below="@+id/tv_info"
+        android:text="Protocol" />
+
+    <Button
+        android:id="@+id/btn_avformat"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_toRightOf="@+id/btn_urlprotocol"
+        android:text="Format" />
+
+    <Button
+        android:id="@+id/btn_avcodec"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_toRightOf="@+id/btn_avformat"
+        android:text="Codec" />
+
+    <Button
+        android:id="@+id/btn_avfilter"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_toRightOf="@+id/btn_avcodec"
+        android:text="Filter" />
+
+    <Button
+        android:id="@+id/btn_configuration"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_urlprotocol"
+        android:layout_below="@+id/btn_urlprotocol"
+        android:text="Configuration" />
+
+    <TextView
+        android:id="@+id/tv_libinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_configuration"
+        android:layout_below="@+id/btn_configuration"
+        android:isScrollContainer="true"
+        android:text="info"
+        android:scrollbars="vertical"
+        />
+
+</RelativeLayout>

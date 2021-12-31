@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL" />
+
+    <EditText
+        android:id="@+id/et_input_url"
+        android:inputType="textUri"
+        android:textColor = "#ff8c00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_url"
+        android:layout_below="@+id/tv_url"
+        android:text="reverse.mp4"
+        android:ems="100" />
+
+    <Button
+        android:id="@+id/btn_set"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_input_url"
+        android:layout_below="@+id/et_input_url"
+        android:text="Set" />
+    <Button
+        android:id="@+id/btn_start"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_set"
+        android:layout_toRightOf="@+id/btn_set"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_start"
+        android:layout_toRightOf="@+id/btn_start"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_pause"
+        android:layout_toRightOf="@+id/btn_pause"
+        android:text="Stop" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignLeft="@+id/btn_set"
+        android:layout_below="@+id/btn_set" />
+
+</RelativeLayout>

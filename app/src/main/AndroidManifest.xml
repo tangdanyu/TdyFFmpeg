@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tdyffmpeg">
+    <!-- 请求相机功能 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 请求写入权限 -->
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 请求录制音频权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TdyFFmpeg">
+        <activity
+            android:name=".camera.encode.FFmpegCameraEncodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".sdl.SDLActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegTranscoderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegStreamerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegHelloworldActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegEncodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegDecodeOneLibActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegDecodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VideoViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ffmpeg.FFmpegActivity"
+            android:exported="true" />
+        <activity
+            android:name=".javacv.JavacvActivity"
+            android:exported="true" />
+        <activity
+            android:name=".javacv.activity.VideoPlayerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".javacv.activity.CameraDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

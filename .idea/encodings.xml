@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/cpp/jni/simplest_ffmpeg_decoder.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/cpp/jni/simplest_ffmpeg_encoder.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/cpp/jni/simplest_ffmpeg_helloworld.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/cpp/jni/simplest_ffmpeg_streamer.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/cpp/jni/simplest_showbmp.c" charset="GBK" />
+  </component>
+</project>

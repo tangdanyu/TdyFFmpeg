@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glviewFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".javacv.activity.CameraDemoActivity">
+
+
+    <com.example.tdyffmpeg.javacv.view.CameraGLSurfaceView
+        android:id="@+id/myGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/menuLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/takeShotBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="拍照" />
+
+            <Button
+                android:id="@+id/recordBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="点按录像" />
+
+            <Button
+                android:id="@+id/switchBtn"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="切换前后" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>
